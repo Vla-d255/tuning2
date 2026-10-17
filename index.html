@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="uk" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас - Ательє японського тюнінгу</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+        crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root, [data-bs-theme=dark] {
+            --bs-primary: #e11d2e;
+            --bs-primary-rgb: 255, 77, 94;
+        }
+        .btn-primary {
+            --bs-btn-bg: #e11d2e;
+            --bs-btn-border-color: #e11d2e;
+            --bs-btn-hover-bg: #b3121f;
+            --bs-btn-hover-border-color: #b3121f;
+            --bs-btn-active-bg: #b3121f;
+            --bs-btn-active-border-color: #b3121f;
+        }
+        @keyframes tile-in {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .gallery > .col {
+            animation: tile-in 0.7s ease-out both;
+        }
+        .gallery > .col:nth-child(1) { animation-delay: 0.05s; }
+        .gallery > .col:nth-child(2) { animation-delay: 0.15s; }
+        .gallery > .col:nth-child(3) { animation-delay: 0.25s; }
+        .gallery > .col:nth-child(4) { animation-delay: 0.35s; }
+        .gallery > .col:nth-child(5) { animation-delay: 0.45s; }
+        .gallery > .col:nth-child(6) { animation-delay: 0.55s; }
+        .photo {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .photo img {
+            transition: transform 0.6s ease;
+        }
+        .photo:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0.75rem 1.5rem rgba(225, 29, 46, 0.35) !important;
+        }
+        .photo:hover img {
+            transform: scale(1.1);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .gallery > .col { animation: none; }
+            .photo, .photo img { transition: none; }
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <section id="about-us" class="container my-5">
+        <div class="row gx-lg-5 align-items-center">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <div class="row row-cols-2 g-3 gallery">
+                    <div class="col">
+                        <figure class="position-relative m-0">
+                            <div class="ratio ratio-4x3 overflow-hidden rounded-4 shadow-sm photo">
+                                <img src="1.jpg" class="img-fluid object-fit-cover"
+                                     alt="Тюнінгований японський спорткар в ательє">
+                            </div>
+                            <figcaption data-bs-theme="light"
+                                        class="position-absolute top-0 end-0 m-2 bg-white p-2 rounded-3 fw-bold shadow-sm text-center">
+                                <span class="d-block fs-5 text-primary">10+</span>
+                                <span class="text-secondary small text-uppercase">років досвіду</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="m-0">
+                            <div class="ratio ratio-4x3 overflow-hidden rounded-4 shadow-sm photo">
+                                <img src="2.jpg" class="img-fluid object-fit-cover"
+                                     alt="Японське авто після тюнінгу підвіски">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="m-0">
+                            <div class="ratio ratio-4x3 overflow-hidden rounded-4 shadow-sm photo">
+                                <img src="4.jpg" class="img-fluid object-fit-cover"
+                                     alt="Японське авто з індивідуальним обвісом">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="m-0">
+                            <div class="ratio ratio-4x3 overflow-hidden rounded-4 shadow-sm photo">
+                                <img src="3.jpg" class="img-fluid object-fit-cover"
+                                     alt="Тюнінг двигуна японського авто">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="m-0">
+                            <div class="ratio ratio-4x3 overflow-hidden rounded-4 shadow-sm photo">
+                                <img src="5.jpg" class="img-fluid object-fit-cover"
+                                     alt="Готовий проєкт ательє японського тюнінгу">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-4x3 rounded-4 shadow-sm bg-primary overflow-hidden">
+                            <a href="#" class="d-flex flex-column align-items-center justify-content-center text-center text-white text-decoration-none p-2">
+                                <i class="bi bi-car-front fs-1 mb-1"></i>
+                                <span class="fw-bold">Ваш проєкт - наступний</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <header class="mb-4">
+                    <p class="text-primary fw-bold text-uppercase mb-2">Про ательє</p>
+                    <h2 class="display-6 fw-bold">Створюємо легенди японського автопрому для сучасних доріг</h2>
+                </header>
+                <p class="text-secondary mb-4">
+                    Ми - ательє, що спеціалізується на тюнінгу японських авто: Toyota, Nissan, Honda, Mazda та Subaru.
+                    Для нас кожен автомобіль - це унікальний проєкт, де потужність, надійність і стиль працюють разом.
+                    Ми поважаємо JDM-культуру та робимо тюнінг, який не втрачає ресурсу двигуна.
+                </p>
+                <div class="mb-3">
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="d-flex align-items-center justify-content-center me-3 flex-shrink-0 bg-light rounded-circle"
+                             style="width: 48px; height: 48px;">
+                            <i class="bi bi-graph-up text-primary fs-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5 fw-bold mb-1">Приріст потужності</h3>
+                            <p class="text-secondary mb-0">Чіп-тюнінг, турбонаддув та вихлопні системи з перевіреним результатом на діностенді.</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start mb-3">
+                        <div class="d-flex align-items-center justify-content-center me-3 flex-shrink-0 bg-light rounded-circle"
+                             style="width: 48px; height: 48px;">
+                            <i class="bi bi-people text-primary fs-5"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5 fw-bold mb-1">Команда майстрів</h3>
+                            <p class="text-secondary mb-0">Досвідчені механіки та кузовники, які працюють з японськими авто щодня.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-column flex-md-row align-items-md-center mt-4">
+                    <a href="#" class="btn btn-primary btn-lg rounded-pill px-4 mb-3 mb-md-0 me-md-3">Дізнатися більше про нас</a>
+                    <div class="d-flex flex-column text-secondary text-center text-md-start">
+                        <small>Зателефонуйте нам:</small>
+                        <a href="tel:+380441234567" class="text-white fw-bold text-decoration-none">+38 (067) 123-52-67</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row text-center mt-5 pt-5">
+            <h2 class="visually-hidden">Наші досягнення та ключова статистика</h2>
+            <article class="col-6 col-md-3 mb-4">
+                <h4 class="display-4 fw-bold text-primary">1000+</h4>
+                <p class="text-secondary small">тюнінгованих авто</p>
+            </article>
+            <article class="col-6 col-md-3 mb-4">
+                <h4 class="display-4 fw-bold text-primary">10</h4>
+                <p class="text-secondary small">років на ринку</p>
+            </article>
+            <article class="col-6 col-md-3 mb-4">
+                <h4 class="display-4 fw-bold text-primary">98%</h4>
+                <p class="text-secondary small">задоволених клієнтів</p>
+            </article>
+            <article class="col-6 col-md-3 mb-4">
+                <h4 class="display-4 fw-bold text-primary">40+</h4>
+                <p class="text-secondary small">унікальних проєктів на рік</p>
+            </article>
+        </div>
+    </section>
+</body>
+</html>
